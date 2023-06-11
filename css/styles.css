@@ -350,6 +350,9 @@ nav ul li {
     h3, .paragraph{
         text-align: center;
     }
+    .about-block h2.headline{
+        margin-top: 0;
+    }
     .headline{
         width: 100vw;
         font-size: 32px;
@@ -404,6 +407,12 @@ nav ul li {
     .spoiler-header{
         max-width: 370px;
     }
+    .spoiler-content{
+        max-width: 370px;
+    }
+    .spoiler-content p{
+        max-width: 370px;
+    }
     .flex-box-column li, .flex-box-column ul, .flex-box-column div.flex-box label{
         max-width: 370px;
     }
@@ -412,9 +421,9 @@ nav ul li {
 .slider {
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 900px;
     overflow: hidden;
-    padding: 50px 0;
+    margin-top: -70px;
 }
 
 .slider-item {
@@ -430,6 +439,7 @@ nav ul li {
     text-align: center;
     opacity: 0;
     transition: opacity 0.5s ease;
+    margin-top: 50px;
 }
 
 .slider-item.active {
@@ -439,12 +449,13 @@ nav ul li {
 .slider-item img {
     max-width: 100%;
     height: auto;
+    margin-top: 100px;
 }
 
 .slider-item h2 {
     font-size: 24px;
-    margin-bottom: 20px;
     color: #fff;
+    margin-top: 0px;
 }
 
 .slider-item p {
@@ -455,7 +466,7 @@ nav ul li {
 
 .slider-controls {
     position: absolute;
-    bottom: 20px;
+    top: 250px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -481,8 +492,8 @@ nav ul li {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
+    width:50px;
+    height: 50px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
     display: flex;
@@ -491,6 +502,7 @@ nav ul li {
     cursor: pointer;
     transition: background-color 0.3s ease;
     z-index: 1;
+    margin: 50px calc(50% - 380px);
 }
 
 .slider-arrow:hover {
@@ -556,6 +568,11 @@ nav ul li {
 
 .spoiler-content p {
     margin: 0;
+    text-align: left;
+}
+
+b{
+    font-size: 16px;
 }
 
 .footer {
@@ -596,6 +613,13 @@ nav ul li {
 @media screen and (max-width: 600px) {
     .footer {
         font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .slider-arrow {
+        background-color: rgba(19, 19, 19, 0.765);
+        margin: 0 calc(50% - 250px);
     }
 }
 
