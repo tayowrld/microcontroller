@@ -20,6 +20,10 @@ section{
     position: relative;
 }
 
+.mobile-whatsapp{
+    display: none;
+}
+
 a{
     color: #fff;
     text-decoration: none;
@@ -227,9 +231,14 @@ section.spoiler-block{
     padding: 50px 0;
 }
 
+.spoiler-header{
+    width: 700px;
+}
+
 section.spoiler-block p{
-    width: 370px;
+    width: 700px;
     font-size: 14px;
+    transition: all 0.5s;
 }
 
 section.buy-block h2{
@@ -283,8 +292,10 @@ section.buy-block div.image{
 
 footer{
     width: 100vw;
+    height: 50px;
     text-align: center;
     text-transform: uppercase;
+    border-top: #000 solid 2px;
 }
 
 nav ul li {
@@ -323,6 +334,16 @@ nav ul li {
 
 
 @media screen and (max-width:1150px) {
+    .mobile-whatsapp{
+        display: inline;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 1000;
+        background-color: rgb(0, 255, 110);
+        padding: 20px;
+        border-radius: 25%;
+    }
     header{
         display: none;
     }
@@ -334,6 +355,7 @@ nav ul li {
         font-size: 32px;
         margin: auto;
         text-align: center;
+        margin-top: -100px;
     }
     .underline{
         margin-top: 50px;
@@ -378,6 +400,12 @@ nav ul li {
         0 0 50px #ffffff00,            /* outer white */
         -10px 0 80px rgba(255, 0, 255, 0),        /* outer left magenta */
         10px 0 80px rgba(0, 255, 255, 0);
+    }
+    .spoiler-header{
+        max-width: 370px;
+    }
+    .flex-box-column li, .flex-box-column ul, .flex-box-column div.flex-box label{
+        max-width: 370px;
     }
 }
 
@@ -570,3 +598,64 @@ nav ul li {
         font-size: 12px;
     }
 }
+
+.buy-block li{
+    list-style-type: circle;
+    cursor: cell;
+}
+
+.buy-block ul{
+    width: 500px;
+}
+
+.flex-box-column{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-box-column div.flex-box{
+    width: 550px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.payment-delivery-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .payment-delivery-section h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .payment-delivery-section p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .payment-delivery-section img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .payment-delivery-section {
+      padding: 10px;
+    }
+  
+    .payment-delivery-section h2 {
+      font-size: 20px;
+    }
+  
+    .payment-delivery-section p {
+      font-size: 14px;
+    }
+  }

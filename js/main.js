@@ -54,3 +54,23 @@ spoilers.forEach(function(spoiler) {
         spoiler.classList.toggle('opened');
     });
 });
+
+var accept = false;
+
+function buy(){
+    if (accept == true){
+        window.location.href = 'http://mastercpu.e-autopay.com/buy/279286';
+    }
+    else{
+        alert("Необходимо согласие");
+    }
+}
+
+document.getElementById('agreeCheckbox').addEventListener('change', function() {
+    if(this.checked) {
+        accept = true;
+    } else {
+        accept = false;
+    }
+    console.log('Accept:', accept);
+});
