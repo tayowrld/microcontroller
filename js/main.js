@@ -55,7 +55,7 @@ spoilers.forEach(function(spoiler) {
     });
 });
 
-var accept = false;
+var accept = true;
 
 function buy(){
     if (accept == true){
