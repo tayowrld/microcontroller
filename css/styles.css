@@ -12,6 +12,7 @@ body,html{
     scroll-behavior: smooth;
     max-width: 100vw;
 }
+
 section{
     display: flex;
     flex-wrap: wrap;
@@ -52,6 +53,15 @@ nav{
 ul{
     list-style-type: none;
     cursor: pointer;
+}
+
+ul li{
+    color: #fff;
+    transition: all 0.7s;
+}
+
+ul li:hover{
+    color: rgb(141, 247, 255);
 }
 
 h1{
@@ -127,7 +137,8 @@ section.about-block{
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
     max-width: 100vw;
-    height: 800px;
+    height: max-content;
+    padding: 50px 0;
     justify-content: space-around;
     padding: 0 calc(50% - 750px);
     background-color: rgb(60, 60, 139);
@@ -210,6 +221,15 @@ section.buy-block{
     margin: auto;
     padding: 50px 0;
     background-color: rgb(25, 110, 114);
+}
+
+section.spoiler-block{
+    padding: 50px 0;
+}
+
+section.spoiler-block p{
+    width: 370px;
+    font-size: 14px;
 }
 
 section.buy-block h2{
@@ -520,7 +540,7 @@ nav ul li {
 }
 
 .footer p {
-    width: 400px;
+    width: 100vw;
     margin: 0;
     font-size: 14px;
     line-height: 1.5;
