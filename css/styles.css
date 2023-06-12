@@ -99,7 +99,7 @@ ul li:hover{
 
 @media screen and (max-width: 1150px) {
     .navbar{
-        display: flex;
+        display: fle3;
     }
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
@@ -459,16 +459,16 @@ nav ul li {
         10px 0 80px rgba(0, 255, 255, 0);
     }
     .spoiler-header{
-        max-width: 370px;
+        max-width: 330px;
     }
     .spoiler-content{
-        max-width: 370px;
+        max-width: 330px;
     }
     .spoiler-content p{
-        max-width: 370px;
+        max-width: 330px;
     }
     .flex-box-column li, .flex-box-column ul, .flex-box-column div.flex-box label{
-        max-width: 350px;
+        max-width: 330px;
     }
     section.buy-block h2{
         margin-top: 0px;
