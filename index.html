@@ -395,9 +395,12 @@
         <div class="contact-info">
             <p>Связаться с автором можно через e-mail: <a href="mailto:support@micro-controller.ru">support@micro-controller.ru</a>.  <br> Написать в whatsappㅤ<a href="https://wtsp.fun"><img src="./images/whatsapp.svg" style="width: 22px;" alt="whatsapp"></a> </p>
             <p><a target="_blank" href="http://mastercpu.ru/affiliate_program.html"> Партнерская программа.</a></p>
-            <p>© 2023 <a href="https://bloggood.ru/"> Все права защищены.</p>
+            <p>&copy; <span id="copyright-year"></span> <a href="https://bloggood.ru/"> Все права защищены.</p>
             <p><a target="_blank" href="http://micro-controller.ru/ogrnip.html"> ИП Селиванов Максим Михайлович ОГРНИП 314590501000069 гор. Уфа.</a></p>
         </div>
+		<script>
+			document.getElementById('copyright-year').innerHTML = new Date().getFullYear();
+		</script>
     </div>
 	<footer>
 		<h3>Designed by @dreamcore</h3>
