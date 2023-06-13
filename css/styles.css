@@ -533,7 +533,7 @@ nav ul li {
 .slider-item h3 {
     font-size: 24px;
     color: #fff;
-    margin-top: 0px;
+    margin-top: 50px;
 }
 
 .slider-item p {
@@ -545,7 +545,7 @@ nav ul li {
 
 .slider-controls {
     position: absolute;
-    top: 250px;
+    top: 220px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
