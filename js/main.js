@@ -74,3 +74,24 @@ document.getElementById('agreeCheckbox').addEventListener('change', function() {
     }
     console.log('Accept:', accept);
 });
+
+
+$(document).ready(function(){
+    // Событие отправки формы
+    $("#whatsapp-form").submit(function(e){
+        e.preventDefault();
+        let message = $("#message").val();
+        let whatsappNumber = "+7 917 791-06-54"; // Ваш номер телефона
+        let whatsappURL = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+        window.open(whatsappURL);
+        hidePopup(); // Закрывает окно после отправки
+    });
+});
+function showPopupOnOff() {
+    if (document.getElementById("whatsapp-popup").getAttribute("class") == "popup"){
+        document.getElementById("whatsapp-popup").setAttribute("class","popup active-popup");
+    }
+    else{
+        document.getElementById("whatsapp-popup").setAttribute("class","popup");
+    }
+}
